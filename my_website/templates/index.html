@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freak Life - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="home-container">
+        <h1 class="company-name">Welcome to Freak Life</h1>
+        <p>Your ultimate destination for premium gym supplements and fitness gear.</p>
+        <a href="{{ url_for('products') }}" class="shop-btn">Shop Now</a>
+        <a href="{{ url_for('login_page') }}" class="login-btn">Login</a> <!-- Fixed Login URL -->
+        <a href="{{ url_for('register') }}" class="register-btn">Register</a>
+    </div>
+</body>
+</html>
